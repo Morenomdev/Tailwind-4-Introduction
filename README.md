@@ -36,7 +36,7 @@
 
 ###  Project Preview
 
-[![Portfolio Preview](assets\links_preview.png)](https://morenolinks.netlify.app/)
+[![links preview](./assets/links_preview.png)](https://morenolinks.netlify.app/)
 
 ###
 
