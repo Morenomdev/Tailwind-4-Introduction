@@ -7,27 +7,30 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body
-    class="bg-sky-800 max-w-xl mx-auto border border-black min-h-dvh bg-gradient-to-b from-black via-sky-950 to-gray-800"
+    class="bg-sky-800 max-w-xl mx-auto min-h-dvh bg-gradient-to-b from-black via-sky-950 to-gray-800"
   >
     <header class="text-white">
-      <img src="./assets/perfil_jm.jpg" alt="morenomdev"
-      class="h-[50vh] object-cover mask-radial-at-center mask-radial-from-45% mask-radial-to-70%">
+      <img
+        src="./assets/perfil_jm.jpg"
+        alt="morenomdev"
+        class="h-[50vh] w-full object-cover mask-radial-at-center mask-radial-from-45% mask-radial-to-70% animate-pulse-fade-in"
+      />
 
       <header class="flex flex-col justify-center items-center mb-8 -mt-4 z-10">
-        <span 
-        class="text-sky-400 text-xl font-mono px-3 py-1 
-        border border-sky-500/50 rounded-full flex 
-        items-center justify-center shadow-sm bg-black opacity-70
-        cursor-crosshair">
-            @Morenomdev
+        <span
+          class="text-sky-400 text-xl font-mono px-3 py-1 border border-sky-500/50 rounded-full flex items-center justify-center shadow-sm bg-black opacity-70 cursor-crosshair"
+        >
+          Morenomdev
         </span>
-        <h1 class="text-3xl font-extrabold leading-tight mt-1">Jesus Eduardo Moreno Larios</h1>
+        <h1 class="text-3xl p-2 justify-center justify-items-center font-extrabold leading-tight mt-1">
+          Jesus Eduardo Moreno Larios
+        </h1>
       </header>
 
       <section class="flex gap-2 justify-center">
         <!-- GITHUB  -->
         <a
-          class="bg-gray-700 p-2 size-12 sm:size-16 flex items-center justify-center rounded-full hover:scale-110 transition-transform"
+          class="bg-gray-700 animate-slide-up-fade p-2 size-12 sm:size-16 flex items-center justify-center rounded-full hover:scale-110 transition-transform"
           href="https://github.com/Morenomdev"
           target="_blank"
           aria-label="github"
@@ -40,27 +43,112 @@
 
         <!-- LinkedIn  -->
         <a
-          class="bg-sky-100 p-2 size-12 sm:size-16 flex items-center justify-center rounded-full hover:scale-110 transition-transform"
+          class="bg-sky-100 animate-slide-up-fade p-2 size-12 sm:size-16 flex items-center justify-center rounded-full hover:scale-110 transition-transform"
           href="https://www.linkedin.com/in/jmorenodv/"
           target="_blank"
           aria-label="linkedin"
-          title="Ira Linkedin de Jesus Moreno"
+          title="Ir a Linkedin de Jesus Moreno"
         >
           <svg width="28" height="28">
             <use xlink:href="./assets/sprite.svg#linkedin" />
           </svg>
         </a>
       </section>
-
     </header>
 
-    <p class="text-primary text-center mt-4 text-sm px-2 text-balance">
-        Ingeniero en Robótica con 2 años de experiencia en la industria corrugado y metal mecanica.
-        
-        Agregando estilos con Tailwind 4.
+    <p class="text-white text-center mt-4 text-sm px-2 text-balance">
+      Ingeniero en Robótica con 2 años de experiencia en la industria corrugado
+      y metal mecanica. Practicando programación y agregando estilos con Tailwind 4.
     </p>
-    
 
+    <main class="pt-4 text-white">
+      <div class="grid grid-cols-3 grid-rows-2 gap-2 w-full">
+        <!-- Portfolio web -->
+        <a
+          class="relative rounded-3xl overflow-hidden bg-gradient-to-br from-sky-900 via-sky-700 to-sky-500 flex flex-col items-start hover:scale-102 hover:contrast-125 transition col-span-2 p-7 min-h-44 group"
+          href="https://jesusmoreno.vercel.app/" target="_blank"
+        >
+          <span class="absolute bottom-2 left-2 font-bold text-2xl"
+            >Portfolio Web</span
+          >
+          <img class="absolute right-3 top-10 sm:top-3 rounded-2xl group-hover:scale-125 transition-transform"
+            width="90"
+            height="90"
+            src="./assets/icon.png"
+            alt="icono_web"
+          />
+          <span
+            class="absolute top-2 left-2 text-xs border rounded-xl px-1 py-0.5"
+            >HTML5 - CSS3 - JS - VERCEL</span
+          >
+        </a>
+        <!-- Calculator -->
+        <a
+        class="relative rounded-3xl overflow-hidden bg-gradient-to-br from-orange-900 via-orange-700 to-orange-500 flex flex-col items-start hover:scale-105 hover:contrast-125 transition col-span-1 p-7 min-h-44 group"
+        href="https://calculatorjesusmoreno.netlify.app/" target="_blank"
+      >
+        <span class="absolute bottom-2 left-2 font-bold text-2xl"
+          >Calculator</span
+          >
+        <img
+        class="absolute right-3 top-10 rounded-2xl group-hover:scale-120 transition-transform w-18 h-18 sm:w-25 sm:h-25"
+        src="./assets/calculator.png"
+          alt="icono_web"
+        />
+        <span
+        class="absolute top-2 left-2 text-xs border rounded-xl px-1 py-0.5"
+        >HTML5 - CSS3 - JS</span
+        >
+      </a>
+        <!-- Pokedex -->
+        <a
+        class="relative rounded-3xl overflow-hidden bg-gradient-to-br from-red-500 via-gray-950 to-white flex flex-col items-start hover:scale-105 hover:contrast-125 transition col-span-1 p-7 min-h-44 group"
+        href="https://pokedexjesusmoreno.vercel.app/" target="_blank"
+      >
+        <span class="absolute bottom-2 left-2 font-bold text-2xl"
+          >Pokedex</span
+          >
+        <img
+        class="absolute right-4 top-16 rounded-2xl group-hover:scale-120 transition-transform  w-25 sm:w-35"
+        src="./assets/Pokedex.png"
+          alt="icono_web"
+        />
+        <span
+        class="absolute top-2 left-2 text-xs border rounded-xl px-1 py-0.5"
+        >HTML5 - CSS3 - JS - API</span
+        >
+      </a>
+        <!-- Google Clone -->
+        <a
+        class="relative rounded-3xl overflow-hidden bg-gradient-to-br from-green-500 via-green-800 to-green-600 flex flex-col items-start hover:scale-105 hover:contrast-125 transition col-span-1 p-7 min-h-44 group"
+        href="https://googlejesusmoreno.netlify.app/" target="_blank"
+      >
+        <span class="absolute bottom-2 left-2 font-bold text-2xl"
+          >Gogle Clone</span
+          >
+        
+          <svg class="absolute w-15 h-15 sm:w-25 sm:h-25 right-10 top-10 rounded-2xl group-hover:scale-120 transition-transform" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 48 48">
+<path fill="#FFC107" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"></path><path fill="#FF3D00" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"></path><path fill="#4CAF50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"></path><path fill="#1976D2" d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"></path>
+</svg>
+        <span
+        class="absolute top-2 left-2 text-xs border rounded-xl px-1 py-0.5 z-99"
+        >HTML5 - CSS3</span
+        >
+      </a>
+         <!-- Cooming soon... -->
+        <a
+        class="relative rounded-3xl overflow-hidden bg-black flex flex-col items-start hover:scale-105 hover:contrast-125 transition col-span-1 p-7 min-h-44 group"
+        href=""
+      >
+        <span class="absolute bottom-2 left-2 font-bold text-2xl"
+          >Cooming soon...</span
+          >
+      </a>
+    </div>
+    </main>
+
+  
+<!-- https://googlejesusmoreno.netlify.app/ -->
     <!-- <main class="bg-white">Aqui van los links</main>
     <footer class="bg-white">Desarrollador por Moreno</footer> -->
   </body>
